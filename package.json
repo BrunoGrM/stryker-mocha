@@ -1,0 +1,17 @@
+{
+  "name": "stryker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stryker-mutator/core": "^4.1.2",
+    "@stryker-mutator/mocha-runner": "^4.1.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
