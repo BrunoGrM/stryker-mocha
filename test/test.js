@@ -1,5 +1,6 @@
 var chai = require('chai')
 var { calcular } = require('../src/Calculadora')
+var { exceptions } = require('../src/Exceptions')
 
 describe('#calcular', function() {
     it('Deve retornar erro', function() {
@@ -20,5 +21,9 @@ describe('#calcular', function() {
 
     it('Deve dividir', function() {
         chai.assert.equal(calcular({operator: '/', n1: 200, n2: 2}), 100, 'Algo foi dividido errado')
+    })
+
+    it('Exception default', function() {
+        chai.assert.equal(exceptions('Chama default'), 'Erro default', 'Exceção errada')
     })
 })

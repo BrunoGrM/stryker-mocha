@@ -1,14 +1,10 @@
 const exceptions = (type) => {
-    var message = ''
-
     switch (type) {
         case 'invalid':
-            message = 'Deu erro mano - operador inválido'
+            return 'Deu erro mano - operador inválido'
         default:
-            break
+            return 'Erro default'
     }
-
-    return new Error(message)
 }
 
 module.exports = {
